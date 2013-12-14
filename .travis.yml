@@ -1,0 +1,5 @@
+language: cpp
+before_script:
+  - sudo apt-get install astyle
+  - chmod +x ./tools/check-style.sh
+script: ./tools/check-style.sh
