@@ -230,5 +230,6 @@ File *System::createFileInstance(QFile *f)
     // Get the Encoding used by the Terminal at this point in time
     Encoding e(Terminal::instance()->getEncoding());
     QTextCodec *codec = e.getCodec();
+    // QTextCodec *codec = QTextCodec::codecForName("UTF-8");
     return new File(f, codec, this);
 }

@@ -1277,7 +1277,7 @@ describe("WebPage object", function() {
             expect(handled).toBe(true);
         });
     });
-
+    
     it('should fire `onResourceReceived` callback when the resource error occured', function() {
         var page = require('webpage').create();
         var server = require('webserver').create();

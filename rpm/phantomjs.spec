@@ -1,5 +1,5 @@
 %define name	phantomjs
-%define version	1.9
+%define version	1.9.2-with-woff
 %define release 1
 %define prefix	/usr
 
@@ -136,10 +136,26 @@ cp README.md %{mybuilddir}%{prefix}/share/%{name}/
 %{prefix}/share/%{name}/examples/waitfor.js
 %{prefix}/share/%{name}/examples/walk_through_frames.coffee
 %{prefix}/share/%{name}/examples/walk_through_frames.js
+%{prefix}/share/%{name}/examples/features.coffee
+%{prefix}/share/%{name}/examples/module.coffee
+%{prefix}/share/%{name}/examples/page_events.coffee
+%{prefix}/share/%{name}/examples/page_events.js
+%{prefix}/share/%{name}/examples/pagecallback.coffee
+%{prefix}/share/%{name}/examples/pagecallback.js
+%{prefix}/share/%{name}/examples/postserver.coffee
+%{prefix}/share/%{name}/examples/printenv.coffee
+%{prefix}/share/%{name}/examples/printheaderfooter.coffee
+%{prefix}/share/%{name}/examples/printmargins.coffee
+%{prefix}/share/%{name}/examples/server.coffee
+%{prefix}/share/%{name}/examples/serverkeepalive.coffee
+%{prefix}/share/%{name}/examples/child_process-examples.coffee
+%{prefix}/share/%{name}/examples/child_process-examples.js
+%{prefix}/share/%{name}/examples/loadurlwithoutcss.coffee
+%{prefix}/share/%{name}/examples/loadurlwithoutcss.js
+%{prefix}/share/%{name}/examples/stdin-stdout-stderr.coffee
+%{prefix}/share/%{name}/examples/stdin-stdout-stderr.js
 %{prefix}/share/%{name}/examples/weather.coffee
 %{prefix}/share/%{name}/examples/weather.js
-%{prefix}/share/%{name}/LICENSE.BSD
-%{prefix}/share/%{name}/README.md
 
 %changelog
 * Tue Apr 30 2013 Eric Heydenberk <heydenberk@gmail.com>
