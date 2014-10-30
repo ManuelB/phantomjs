@@ -114,6 +114,12 @@ System::System(QObject *parent) :
     case QSysInfo::MV_10_8:
         m_os.insert("version", "10.8 (Mountain Lion)");
         break;
+    case QSysInfo::MV_10_9:
+        m_os.insert("version", "10.9 (Mavericks)");
+        break;
+    case QSysInfo::MV_10_10:
+        m_os.insert("version", "10.10 (Yosemite)");
+        break;
     default:
         m_os.insert("version", "unknown");
         break;

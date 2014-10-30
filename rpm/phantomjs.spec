@@ -1,5 +1,5 @@
 %define name	phantomjs
-%define version	1.9.2-with-woff
+%define version	1.9.8
 %define release 1
 %define prefix	/usr
 
@@ -36,12 +36,12 @@ cp README.md %{mybuilddir}%{prefix}/share/%{name}/
 %files
 %defattr(0444,root,root)
 %attr(0555,root,root)%{prefix}/bin/%{name}
-%{prefix}/share/%{name}/ChangeLog
 %{prefix}/share/%{name}/CONTRIBUTING.md
+%{prefix}/share/%{name}/ChangeLog
+%{prefix}/share/%{name}/LICENSE.BSD
+%{prefix}/share/%{name}/README.md
 %{prefix}/share/%{name}/examples/arguments.coffee
 %{prefix}/share/%{name}/examples/arguments.js
-%{prefix}/share/%{name}/examples/child_process-examples.coffee
-%{prefix}/share/%{name}/examples/child_process-examples.js
 %{prefix}/share/%{name}/examples/colorwheel.coffee
 %{prefix}/share/%{name}/examples/colorwheel.js
 %{prefix}/share/%{name}/examples/countdown.coffee
@@ -52,7 +52,6 @@ cp README.md %{mybuilddir}%{prefix}/share/%{name}/
 %{prefix}/share/%{name}/examples/direction.js
 %{prefix}/share/%{name}/examples/echoToFile.coffee
 %{prefix}/share/%{name}/examples/echoToFile.js
-%{prefix}/share/%{name}/examples/features.coffee
 %{prefix}/share/%{name}/examples/features.js
 %{prefix}/share/%{name}/examples/fibo.coffee
 %{prefix}/share/%{name}/examples/fibo.js
@@ -68,10 +67,7 @@ cp README.md %{mybuilddir}%{prefix}/share/%{name}/
 %{prefix}/share/%{name}/examples/ipgeocode.js
 %{prefix}/share/%{name}/examples/loadspeed.coffee
 %{prefix}/share/%{name}/examples/loadspeed.js
-%{prefix}/share/%{name}/examples/loadurlwithoutcss.coffee
-%{prefix}/share/%{name}/examples/loadurlwithoutcss.js
 %{prefix}/share/%{name}/examples/modernizr.js
-%{prefix}/share/%{name}/examples/module.coffee
 %{prefix}/share/%{name}/examples/module.js
 %{prefix}/share/%{name}/examples/movies.coffee
 %{prefix}/share/%{name}/examples/movies.js
@@ -81,23 +77,15 @@ cp README.md %{mybuilddir}%{prefix}/share/%{name}/
 %{prefix}/share/%{name}/examples/netsniff.js
 %{prefix}/share/%{name}/examples/outputEncoding.coffee
 %{prefix}/share/%{name}/examples/outputEncoding.js
-%{prefix}/share/%{name}/examples/page_events.coffee
-%{prefix}/share/%{name}/examples/page_events.js
-%{prefix}/share/%{name}/examples/pagecallback.coffee
-%{prefix}/share/%{name}/examples/pagecallback.js
 %{prefix}/share/%{name}/examples/phantomwebintro.coffee
 %{prefix}/share/%{name}/examples/phantomwebintro.js
 %{prefix}/share/%{name}/examples/pizza.coffee
 %{prefix}/share/%{name}/examples/pizza.js
 %{prefix}/share/%{name}/examples/post.coffee
 %{prefix}/share/%{name}/examples/post.js
-%{prefix}/share/%{name}/examples/postserver.coffee
 %{prefix}/share/%{name}/examples/postserver.js
-%{prefix}/share/%{name}/examples/printenv.coffee
 %{prefix}/share/%{name}/examples/printenv.js
-%{prefix}/share/%{name}/examples/printheaderfooter.coffee
 %{prefix}/share/%{name}/examples/printheaderfooter.js
-%{prefix}/share/%{name}/examples/printmargins.coffee
 %{prefix}/share/%{name}/examples/printmargins.js
 %{prefix}/share/%{name}/examples/rasterize.coffee
 %{prefix}/share/%{name}/examples/rasterize.js
@@ -111,16 +99,12 @@ cp README.md %{mybuilddir}%{prefix}/share/%{name}/
 %{prefix}/share/%{name}/examples/scandir.js
 %{prefix}/share/%{name}/examples/seasonfood.coffee
 %{prefix}/share/%{name}/examples/seasonfood.js
-%{prefix}/share/%{name}/examples/server.coffee
 %{prefix}/share/%{name}/examples/server.js
-%{prefix}/share/%{name}/examples/serverkeepalive.coffee
 %{prefix}/share/%{name}/examples/serverkeepalive.js
 %{prefix}/share/%{name}/examples/simpleserver.coffee
 %{prefix}/share/%{name}/examples/simpleserver.js
 %{prefix}/share/%{name}/examples/sleepsort.coffee
 %{prefix}/share/%{name}/examples/sleepsort.js
-%{prefix}/share/%{name}/examples/stdin-stdout-stderr.coffee
-%{prefix}/share/%{name}/examples/stdin-stdout-stderr.js
 %{prefix}/share/%{name}/examples/technews.coffee
 %{prefix}/share/%{name}/examples/technews.js
 %{prefix}/share/%{name}/examples/tweets.coffee
